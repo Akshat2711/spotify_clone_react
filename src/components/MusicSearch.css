@@ -1,0 +1,127 @@
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(9, 119, 121) 35%, rgba(0,212,255,1) 100%);
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 80px;
+    display: block;
+    position: fixed;  
+    top: 0;           
+    left: 0;          
+    width: 100%;      
+    background-color: transparent;  
+    z-index: 3;    /* Increase z-index of the heading */
+    padding: 20px 0;
+  }
+  
+  form {
+   margin-top: -100px; /* Ensure form is pushed below the fixed heading */
+   text-align: center;
+    display: block;
+    z-index: 1;  /* Form z-index is lower than h1 */
+  }
+  
+  input {
+    border-radius: 20px;
+    padding: 10px;
+    background-color: black;
+    color: azure;
+    border: none;
+    position: relative; /* Set position to make z-index work */
+    z-index: 5;  /* Ensure input is above other elements */
+  }
+ 
+  button {
+    border-radius: 20px;
+    padding: 10px;
+    background-color: black;
+    color: rgb(56, 185, 185);
+    border: none;
+    margin-left: 3px;
+    position: relative; /* Set position to make z-index work */
+    z-index: 5;  /* Ensure button is clickable */
+  }
+
+  
+  .player-container{
+    background-color:transparent;
+    margin-top: -570px;
+    height:400px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+
+  }
+  .player{margin-left:39%;
+    background-color: rgb(0, 0, 0);
+    width:370px;
+    height: 370px;
+    border-radius: 20px;
+  }
+ img{ width: 300px; 
+    height: 300px; 
+border-radius: 20px;
+margin-top: 10px;}
+h3{
+    color: aliceblue;
+}
+audio{
+    margin-top: 20px;
+    
+}
+
+.prev_btn,.next_btn{
+    background-color: transparent;
+    color: rgb(56, 185, 185);
+
+}
+.prev_btn{
+    margin-right: 210px;
+}
+.navigation-buttons{
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.liked_list{
+  background-color: rgb(0, 0, 0);
+  width:20%;
+  height:900px;
+  margin-top: -10px;
+  margin-left: 20px;
+  border-radius: 20px;
+  
+  text-align: center;
+}
+
+.head_liked{
+  font-size: 40px;
+  color: rgb(192, 214, 209);
+  font-family:'Times New Roman', Times, serif;
+}
+li{
+  color:  rgb(56, 185, 185);
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.like-btn{
+
+
+  &&:hover{
+    background-color:  rgb(56, 185, 185);
+    color: black;
+    }
+}
+
+
+.play_liked{
+  background-color:  rgb(56, 185, 185);
+  color: black;
+  border-radius: 10px;
+  padding:4px;
+  font-family:Arial, Helvetica, sans-serif;
+}
