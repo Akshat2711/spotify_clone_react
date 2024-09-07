@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-const CLIENT_ID = '40e701902f114c8ca14ea1ea964e9930';
-const CLIENT_SECRET = '63cc7b4b91fc4424b0a1f1fbbfd89fd9';
+const CLIENT_ID = '';
+const CLIENT_SECRET = '';
 
 const TOKEN_URL = 'https://accounts.spotify.com/api/token';
 const SEARCH_URL = 'https://api.spotify.com/v1/search';
