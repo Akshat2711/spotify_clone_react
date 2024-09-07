@@ -12,7 +12,7 @@ const MusicSearch = () => {
     e.preventDefault();
     const musicResults = await searchMusic(query);
     setResults(musicResults);
-    setCurrentIndex(0); // Reset to the first result when a new search is made
+    setCurrentIndex(0); 
   };
 
   const handleNext = () => {
@@ -29,7 +29,7 @@ const MusicSearch = () => {
 
   const handleLike = () => {
     const currentSong = results[currentIndex];
-    // Prevent adding duplicates
+  
     if (!likedsongs.some(song => song.id === currentSong.id)) {
       setLikedSongs([...likedsongs, currentSong]);
     }
@@ -42,16 +42,16 @@ const MusicSearch = () => {
     if (resultIndex !== -1) {
       setCurrentIndex(resultIndex);
     } else {
-      // If the liked song is not in the current search results, add it to the results
+      
       setResults([...results, likedSong]);
-      setCurrentIndex(results.length); // Set the current index to the last item (newly added song)
+      setCurrentIndex(results.length); 
     }
   };
 
   return (
     <div>
       <div className='liked_list'>
-        <p className='head_liked'>♥ Liked Songs</p>
+        <p className='head_liked'>♥ Songs</p>
         <ul className='liked'>
           {likedsongs.map((song, index) => (
             <li key={index}>
@@ -80,7 +80,7 @@ const MusicSearch = () => {
       {results.length > 0 && (
         <div className="player-container">
           <div className="player">
-            {/* Display the album image */}
+            
             <img
               src={results[currentIndex].album.images[0]?.url}
               alt={results[currentIndex].name}

@@ -12,15 +12,15 @@ body {
     left: 0;          
     width: 100%;      
     background-color: transparent;  
-    z-index: 3;    /* Increase z-index of the heading */
+    z-index: 3;   
     padding: 20px 0;
   }
   
   form {
-   margin-top: -100px; /* Ensure form is pushed below the fixed heading */
+   margin-top: -100px;
    text-align: center;
     display: block;
-    z-index: 1;  /* Form z-index is lower than h1 */
+    z-index: 1;  
   }
   
   input {
@@ -29,8 +29,8 @@ body {
     background-color: black;
     color: azure;
     border: none;
-    position: relative; /* Set position to make z-index work */
-    z-index: 5;  /* Ensure input is above other elements */
+    position: relative; 
+    z-index: 5; 
   }
  
   button {
@@ -40,8 +40,8 @@ body {
     color: rgb(56, 185, 185);
     border: none;
     margin-left: 3px;
-    position: relative; /* Set position to make z-index work */
-    z-index: 5;  /* Ensure button is clickable */
+    position: relative; 
+    z-index: 5;  
   }
 
   
